@@ -18,11 +18,11 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     private TextView textResultado;
-    private CheckBox cbVermelho,cbAzul,cbVerde,cbPreto;
+    private CheckBox cbArroz, cbLeite, cbCarne, cbFeijao, cbRefrigerante;
 
-    private RadioGroup radioGroup;
+    /*private RadioGroup radioGroup;
 
-    private RadioButton rbOpcao1, rbOpcao2,rbOpcao3,rbOpcao4;
+    private RadioButton rbOpcao1, rbOpcao2,rbOpcao3,rbOpcao4;*/
     private Button btnSet;
 
     @SuppressLint("MissingInflatedId")
@@ -32,23 +32,25 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        cbAzul = findViewById(R.id.cbAzul);
-        cbPreto = findViewById(R.id.cbPreto);
-        cbVerde = findViewById(R.id.cbVerde);
-        cbVermelho = findViewById(R.id.cbVermelho);
+        cbArroz = findViewById(R.id.cbArroz);
+        cbLeite = findViewById(R.id.cbLeite);
+        cbCarne = findViewById(R.id.cbCarne);
+        cbFeijao = findViewById(R.id.cbFeijao);
+        cbRefrigerante = findViewById(R.id.cbRefrigerante);
 
-        radioGroup = findViewById(R.id.radioGroup);
+        /*radioGroup = findViewById(R.id.radioGroup);
 
         rbOpcao1 = findViewById(R.id.rbOpcao1);
         rbOpcao2 = findViewById(R.id.rbOpcao2);
         rbOpcao3 = findViewById(R.id.rbOpcao3);
-        rbOpcao4 = findViewById(R.id.rbOpcao4);
+        rbOpcao4 = findViewById(R.id.rbOpcao4);*/
 
 
         textResultado = findViewById(R.id.textResultado);
         btnSet = findViewById(R.id.btnSet);
 
-        radioButton();
+        /*radioButton();*/
+        checkBox();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -58,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void enviar(View view){
-       // checkBox();
-        radioButton();
+       checkBox();
+        /*radioButton();*/
     }
 
-    public void radioButton() {
+    /*public void radioButton() {
 
         if (rbOpcao1.isChecked()) {
             textResultado.setText("Opção 1 selecionado");
@@ -85,31 +87,30 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
+    }*/
 
 
         //Metodo para tratar o CheckBox:
 
         public void checkBox () {
-            String texto = "";
-            if (cbVermelho.isChecked()) {
-                // String corSelecionada = "Vermelho";
-                String corSelecionada = cbVermelho.getText().toString();
-                texto = texto + " " + corSelecionada;
+            double valor = 0;
+            if (cbArroz.isChecked()) {
+                valor += 2.69;
             }
-            if (cbVerde.isChecked()) {
-                String corSelecionada = cbVerde.getText().toString();
-                texto = texto + " " + corSelecionada;
+            if (cbLeite.isChecked()) {
+                valor += 2.70;
+            }
+            if (cbCarne.isChecked()) {
+                valor += 16.70;
+            }
+            if (cbFeijao.isChecked()) {
+                valor += 3.38;
+            }
+            if (cbRefrigerante.isChecked()) {
+                valor += 3.0;
             }
 
-            if (cbAzul.isChecked()) {
-                String corSelecionada = cbAzul.getText().toString();
-                texto = texto + " " + corSelecionada;
-            }
-            if (cbPreto.isChecked()) {
-                String corSelecionada = cbPreto.getText().toString();
-                texto = texto + " " + corSelecionada;
-            }
+            String texto = String.format("%.2f", valor);
 
             textResultado.setText(texto);
         }

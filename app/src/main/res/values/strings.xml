@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CheckBox</string>
+
+    <!--Itens de compra-->
+    <string name="arroz">Arroz 1 Kg (R$ 2,69)</string>
+    <string name="leite">Leite longa vida (R$ 2,70)</string>
+    <string name="carne"> Carne Friboi (R$ 16,70)</string>
+    <string name="feijao">Feijão carioquinha 1 Kg (R$ 3,38)</string>
+    <string name="refrigerante">Refrigerante coca-cola 2 litros (R$3,00)</string>
 </resources>

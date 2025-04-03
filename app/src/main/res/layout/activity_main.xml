@@ -13,7 +13,7 @@
         android:id="@+id/textTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cores:"
+        android:text="Sistema de Compras:"
         android:fontFamily="monospace"
         android:textStyle="bold"
         android:textSize="30sp"
@@ -23,30 +23,36 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/cbVermelho"
+        android:id="@+id/cbArroz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vermelho" />
+        android:text="@string/arroz" />
 
     <CheckBox
-        android:id="@+id/cbVerde"
+        android:id="@+id/cbLeite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Verde" />
+        android:text="@string/leite" />
 
     <CheckBox
-        android:id="@+id/cbAzul"
+        android:id="@+id/cbCarne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Azul" />
+        android:text="@string/carne" />
 
     <CheckBox
-        android:id="@+id/cbPreto"
+        android:id="@+id/cbFeijao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Preto" />
+        android:text="@string/feijao" />
 
-    <TextView
+    <CheckBox
+        android:id="@+id/cbRefrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/refrigerante" />
+
+    <!--<TextView
         android:id="@+id/textTitulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,7 +93,7 @@
         android:id="@+id/rbOpcao4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opção 4" />
+        android:text="Opção 4" />-->
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
