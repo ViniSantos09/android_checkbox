@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cores:"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbVermelho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vermelho" />
+
+    <CheckBox
+        android:id="@+id/cbVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde" />
+
+    <CheckBox
+        android:id="@+id/cbAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Azul" />
+
+    <CheckBox
+        android:id="@+id/cbPreto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preto" />
+
+    <TextView
+        android:id="@+id/textTitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecionar uma Opção:"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rbOpcao1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção 1" />
+
+    <RadioButton
+        android:id="@+id/rbOpcao2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção 2" />
+
+    <RadioButton
+        android:id="@+id/rbOpcao3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção 3" />
+
+    <RadioButton
+        android:id="@+id/rbOpcao4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opção 4" />
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"/>
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:onClick="enviar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="#FF00"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
