@@ -19,10 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textResultado;
     private CheckBox cbArroz, cbLeite, cbCarne, cbFeijao, cbRefrigerante;
-
-    /*private RadioGroup radioGroup;
-
-    private RadioButton rbOpcao1, rbOpcao2,rbOpcao3,rbOpcao4;*/
     private Button btnSet;
 
     @SuppressLint("MissingInflatedId")
@@ -38,18 +34,10 @@ public class MainActivity extends AppCompatActivity {
         cbFeijao = findViewById(R.id.cbFeijao);
         cbRefrigerante = findViewById(R.id.cbRefrigerante);
 
-        /*radioGroup = findViewById(R.id.radioGroup);
-
-        rbOpcao1 = findViewById(R.id.rbOpcao1);
-        rbOpcao2 = findViewById(R.id.rbOpcao2);
-        rbOpcao3 = findViewById(R.id.rbOpcao3);
-        rbOpcao4 = findViewById(R.id.rbOpcao4);*/
-
 
         textResultado = findViewById(R.id.textResultado);
         btnSet = findViewById(R.id.btnSet);
 
-        /*radioButton();*/
         checkBox();
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -61,37 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void enviar(View view){
        checkBox();
-        /*radioButton();*/
     }
-
-    /*public void radioButton() {
-
-        if (rbOpcao1.isChecked()) {
-            textResultado.setText("Opção 1 selecionado");
-        }
-
-
-       radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.rbOpcao1){
-                    textResultado.setText("Opção 1 Selecionada");
-
-                } else if (checkedId == R.id.rbOpcao2) {
-                    textResultado.setText("Opção 2 Selecionada");
-                } else if (checkedId == R.id.rbOpcao3) {
-                    textResultado.setText("Opção 3 Selecionada");
-                } else if (checkedId == R.id.rbOpcao4) {
-                    textResultado.setText("Opção 4 Selecionada");
-
-                }
-            }
-        });
-    }*/
-
-
-        //Metodo para tratar o CheckBox:
-
         public void checkBox () {
             double valor = 0;
             if (cbArroz.isChecked()) {
