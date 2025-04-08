@@ -13,46 +13,24 @@
         android:id="@+id/textTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sistema de Compras:"
+        android:text="Digite seu salário(R$):"
         android:fontFamily="monospace"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textColor="#FF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <CheckBox
-        android:id="@+id/cbArroz"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/arroz" />
+        android:id="@+id/edtSalario"
+        android:hint="Salário: R$ 40.00"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="20sp" />
 
-    <CheckBox
-        android:id="@+id/cbLeite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/leite" />
-
-    <CheckBox
-        android:id="@+id/cbCarne"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/carne" />
-
-    <CheckBox
-        android:id="@+id/cbFeijao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/feijao" />
-
-    <CheckBox
-        android:id="@+id/cbRefrigerante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/refrigerante" />
-
-    <!--<TextView
+    <TextView
         android:id="@+id/textTitulo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,25 +53,20 @@
         android:id="@+id/rbOpcao1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opção 1" />
+        android:text="40%" />
 
     <RadioButton
         android:id="@+id/rbOpcao2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opção 2" />
+        android:text="45%" />
 
     <RadioButton
         android:id="@+id/rbOpcao3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Opção 3" />
+        android:text="50%" />
 
-    <RadioButton
-        android:id="@+id/rbOpcao4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Opção 4" />-->
     <TextView
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
